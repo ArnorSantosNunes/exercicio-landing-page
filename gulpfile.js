@@ -7,7 +7,6 @@ function scripts(){
     return gulp.src('./src/scripts/*.js')
     .pipe(uglify())
     .pipe(gulp.dest('./dist/js'))
-
 }
 
 function styles(){
