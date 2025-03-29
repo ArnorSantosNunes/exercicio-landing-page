@@ -168,3 +168,28 @@ body{
     }
     
 }
+.btn-pulsa {
+    cursor: pointer;
+    animation: pulsa 5s infinite ease-in-out;
+}
+
+@keyframes pulsa {
+    0%, 50% { transform: scale(1); }
+    25% { transform: scale(0.9); }
+}
+.btn-muda-cor {
+
+    cursor: pointer;
+    background-color: #FF0000; /* Vermelho */
+    animation: mudaCor 2s infinite alternate ease-in-out;
+    transition: background-color 0.5s ease;
+}
+
+@keyframes mudaCor {
+    0% {
+        background-color: #FF0000; /* Vermelho */
+    }
+    100% {
+        background-color: #8B0000; /* Vermelho escuro */
+    }
+}
